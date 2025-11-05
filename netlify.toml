@@ -1,0 +1,17 @@
+# Netlify configuration file
+# This ensures client-side routing works correctly
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Build settings
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Environment variables (optional - can also be set in Netlify dashboard)
+# [build.environment]
+#   VITE_API_URL = "https://your-backend-url.onrender.com/api"
+
